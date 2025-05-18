@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Auto Bing Searcher - Jatin Kevlani</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 10px;
+            width: 250px;
+        }
+
+        input {
+            width: 100%;
+            margin: 5px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Search Settings</h3>
+    <label>Number of Searches:</label>
+    <input type="number" id="searchCount" value="20" />
+    <label>Minimum Delay (seconds):</label>
+    <input type="number" id="minDelay" value="20" />
+    <label>Maximum Delay (seconds):</label>
+    <input type="number" id="maxDelay" value="30" />
+    <button id="startBtn">Start Search</button>
+    <button id="stopBtn">Stop Search</button>
+
+    <h4>Progress</h4>
+    <p>Completed: <span id="completed">0</span> / <span id="total">0</span></p>
+    <p>Next search in: <span id="nextIn">0</span>s</p>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

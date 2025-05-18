@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Auto Bing Searcher - Jatin Kevlani",
+    "version": "1.0",
+    "description": "Automates Bing searches with customizable delays and query counts for efficient browsing. - Jatin Kevlani",
+    "permissions": [
+        "tabs",
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://www.bing.com/"
+    ],
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "action": {
+        "default_title": "Start Auto Search",
+        "default_popup": "popup.html"
+    }
+}
